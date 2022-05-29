@@ -1,0 +1,354 @@
+:root {
+  --bg-color: #26468f;
+  --nav-color: #ebebeb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 99%;
+  margin: auto;
+}
+
+.btn {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  box-shadow: rgba(212, 205, 194, 255) 0px 5px 1px,
+    rgba(212, 205, 194, 255) 0px 5px 1px;
+}
+
+.btn:hover {
+  background-color: #4d74d0;
+  transition: all 0.3s;
+}
+
+/* NAVBAR */
+nav {
+  height: 130px;
+  width: 100%;
+  background-image: linear-gradient(#26468f 20%, #ebebeb 20%);
+}
+
+.btn-navbar {
+  height: 30px;
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  float: right;
+  margin-top: 60px;
+  margin-right: 80px;
+  text-align: center;
+}
+
+nav .btn-navbar h3 {
+  font-family: var(--text-style);
+  font-size: 18px;
+  color: #ddd;
+  padding: 2px;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+}
+
+header .content-header {
+  position: relative;
+  height: 110px;
+  width: 50%;
+  margin: auto;
+}
+
+header .content-header .logo-header {
+  margin: auto;
+  width: 800px;
+  position: relative;
+  top: -60px;
+  left: -250px;
+}
+
+header .content-header .logo-header .text-header {
+  color: #26468f;
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+header .content-header .logo-header .text-header h2 {
+  font-size: 20px;
+}
+header .content-header .logo-header .text-header h1 {
+  font-size: 35px;
+}
+
+header .hero img {
+  width: 100%;
+}
+
+.hero .btn-hero {
+  position: relative;
+  width: 200px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  float: right;
+  top: -150px;
+  margin-right: 40px;
+}
+
+/* CONTENT */
+
+.content {
+}
+
+.content h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+}
+
+.content h1 span {
+  color: var(--bg-color);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content .row .column .detail-left {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+.content .row .column .detail-left p {
+  font-size: 18px;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.content .row .column .detail-left p span {
+  font-weight: bold;
+}
+
+.content .row .column .detail-right {
+  display: flex;
+  justify-content: start;
+  padding: 15px;
+}
+
+.content .row .column .detail-right p {
+  font-size: 18px;
+  text-align: start;
+  margin-left: 50px;
+}
+
+.content .row .column .detail-right p span {
+  font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+  background-color: #f4f7fe;
+  width: 100%;
+  height: 350px;
+}
+
+.about h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+}
+
+.about h1 span {
+  color: var(--bg-color);
+}
+
+.about p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.about .tombol {
+  display: flex;
+  justify-content: center;
+}
+
+.about .tombol input.btn-about {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* FORM- REGISTRASI */
+.form-regist {
+  width: 100%;
+  height: 800px;
+}
+
+.form-regist h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+}
+
+.form-regist h1 span {
+  color: var(--bg-color);
+}
+
+.form-regist p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-regist {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: url(../bg.png) top left no-repeat;
+}
+
+.form-regist table {
+  position: relative;
+  margin: auto;
+  border: none;
+}
+
+.form-regist table th,
+td {
+  padding: 10px;
+  max-width: 450px;
+}
+
+.form-regist table th {
+  text-align: right;
+}
+
+.form-regist .text-input {
+  width: 400px;
+  padding: 7px;
+  border: 1px solid #999999;
+}
+
+.form-regist select {
+  width: 100px;
+  padding: 7px;
+  position: relative;
+  margin-right: 20px;
+  border: 1px solid #999999;
+}
+
+.form-regist img {
+  position: relative;
+  left: -75px;
+}
+
+.form-regist input.check-card {
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.form-regist span .choose-card {
+  padding: 0 5px 0 0;
+}
+
+.syarat {
+  color: #26468f;
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.check-syarat {
+  width: 25px;
+  height: 100px;
+  position: relative;
+  float: left;
+}
+
+.form-regist input .check-syarat {
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+
+.form-regist .detail-syarat {
+  height: 75px;
+  font-size: 18px;
+}
+
+.form-regist .check-syarat input:checked {
+  background: blue;
+  color: #fff;
+}
+
+.btn-form {
+  background-color: #26468f;
+  border: none;
+  position: relative;
+  padding: 7px 80px;
+  margin-bottom: 10px;
+}
+
+.form-regist p i {
+  font-size: 15px;
+  color: rgb(157, 136, 136);
+}
+
+/* FOOTER CONTENT */
+.footer-content {
+  background-color: #f8f7f3;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.footer-content footer {
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .hero .btn-hero {
+    position: relative;
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content .row .column .detail-right p {
+    font-size: 15px;
+  }
+
+  .about .tombol input.btn-about {
+    font-size: 15px;
+  }
+}
